@@ -4,6 +4,8 @@
 
 body {
 	background-color: #464f54;
+	position: relative;
+	padding-top: 150px;
 }
 
 .wrapper {
@@ -28,10 +30,16 @@ body {
 }
 
 .article-desc {
+	
 	font-family: Georgia, serif;
 	font-size: 30px;
 	color: #8f8f8f;
 	line-height: 2em;
+}
+
+.article-autor {
+	text-transform: uppercase;
+	letter-spacing: 0.219em;
 }
 
 .header {
@@ -42,4 +50,109 @@ body {
 	font-size: 26px;
 	line-height: 1.5em;
 	text-align: justify;
+}
+
+.form-editor {
+	position: absolute;
+	right: 0;
+	max-width: 878px;
+	width: 80%;
+	top: 47px;
+
+}
+
+.form-title {
+	position: relative;
+	height: 188px;
+	background-color: #181818;
+	padding: 50px 0 50px 60px;
+}
+.form-input {
+	display: block;
+	background-color: transparent;
+	border: none;
+	border-bottom: 4px solid #303030;
+	font-size: 48px;
+	font-family: 'Playfair display', serif;
+	color: #fefefe;
+	line-height: 1.9593;
+}
+
+.form-lable {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+	color: #767676;
+	text-transform: uppercase;
+}
+
+.form-bottom {
+	height: 78px;
+	background-color: #f9bf2d;
+	padding: 0 43px;
+	display: flex;
+	-webkit-align-items: center;
+			align-items: center;
+	width: calc(100% - 65px);
+	margin-left: 
+}
+
+.form-text-decoration {
+	width: 33px;
+	height: 33px;
+	font-size: 22px;
+	background-color: transparent;
+	border: none;
+	opacity: .5;
+	color: #fff;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+.form-text-decoration:hover,
+.form-text-decoration:focus {
+	opacity: 1;
+}
+
+.text-decoration_color {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.text-decoration_uppercase small{
+	font-size: 60%;
+}
+
+
+
+.text-decoration_bold {
+	font-weight: bold;
+}
+
+.text-decoration_italic {
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.text-decoration_underline {
+	text-decoration: underline;
+}
+
+.form-text-decoration span {
+	display: block;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 3px;
+}
+
+.form-text-decoration span:last child {
+	margin-bottom: 0;
+}
+
+.form-text-decoration + .form-text-decoration {
+	margin-left: 32px;
+}
+
+.text-decoration_left span:nth-child(even) {
+	width: 20px;
 }
